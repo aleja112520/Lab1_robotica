@@ -38,7 +38,7 @@ a.  Familiarizarse  con  los  comandos  de  mayor  uso  para  la  consola  de  L
 ***
 b)Conexiòn de ROS con Matlab.
 - Con Linux operando lanzar 2 terminales. En la primera terminal escribir el comando roscore para iniciar el nodo maestro.
-<img src="file:///home/julieth/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-04-07%2016-27-20.png" alt="drawing" width="300"/>
+![](https://postimg.cc/kDV4pdwF)
 - En la segunda terminal escribir rosrun turtlesim turtlesim_node.
 
 

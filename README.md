@@ -43,3 +43,8 @@ b)Conexiòn de ROS con Matlab.
 ```
 para meter codigo
 ```
+c) Utilizando Python: Procedimiento:
+  - En el paquete *hello_turtle* de ROS, en la carpeta de scripts, crear un *script* de Python, de nombre *myTeleopKey.py*
+  - Escribir un código que permita operar una tortuga del paquete turtlesim con el teclado, que cumpla con las siguientes especificaciones:
+    - Se debe mover hacia adelante y hacia atr ́as con las teclas W y S.
+    - 

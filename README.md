@@ -37,12 +37,31 @@ a.  Familiarizarse  con  los  comandos  de  mayor  uso  para  la  consola  de  L
   Este comando muestra el manual de uso del comando espicificado   Ej: man mv                                                                                                                                                                                                       
 ***
 b)Conexiòn de ROS con Matlab.
+- Con Linux operando lanzar 2 terminales. En la primera terminal escribir el comando roscore para iniciar el nodo maestro.
+<img src="file:///home/julieth/Im%C3%A1genes/Captura%20de%20pantalla%20de%202022-04-07%2016-27-20.png" alt="drawing" width="300"/>
+- En la segunda terminal escribir rosrun turtlesim turtlesim_node.
 
 
-
+- Lanzar una instancia de Matlab para Linux 
+- Crear un script con el siguiente código:
 ```
-para meter codigo
+%%
+rosinit; %Conexión con nodo maestro
+%%
+velPub = rospublisher(’/turtle1/cmd_vel’,’geometry_msgs/Twist’); %Creación publicador
+velMsg = rosmessage(velPub); %Creacion de mensaje
+%%
+velMsg.Linear.X = 1; %Valor del mensaje
+send(velPub,velMsg); %Envio
+pause(1)
 ```
+-Ejecutar las tres secciones del script y observar los resultados con la pose de la tortuga.
+-Crear un script en Matlab que permita suscribirse al tópico de pose de la simulación de turtle1.  
+Tip:Usar la instrucción rossubscriber con los argumentos (’TOPICNAME’, ’MESSAGETY-PE’), luego utilizar la opción lattest messagepara captura el último mensaje obtenido.
+-Crear un script en Matlab que permita enviar todos los valores asociados a la pose deturtle1.
+Tip:El topicopose únicamente sirve para suscribirse, consultar los servicios de turtlesim para modificar la pose de la tortuga.
+-Consultar de qué manera se finaliza el nodo maestro en Matlab
+
 c) Utilizando Python: Procedimiento:
   - En el paquete *hello_turtle* de ROS, en la carpeta de scripts, crear un *script* de Python, de nombre *myTeleopKey.py*
   - Escribir un código que permita operar una tortuga del paquete turtlesim con el teclado, que cumpla con las siguientes especificaciones:

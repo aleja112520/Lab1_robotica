@@ -1,7 +1,7 @@
 # Lab1_robotica
 # Estudiantes: Alejandra Rojas - Juan Diego XXXX
 Ejercicios en el laboratorio:
-
+***
 a)  Familiarizarse  con  los  comandos  de  mayor  uso  para  la  consola  de  Linux  (veáse http://www.informit.com/blogs/blog.aspx?uk=The-10-Most-Important-Linux-Commands)
 
 En el sitio web al que se hace referencia, se nombran 10 comandos que pueden escribirse en el terminal de Linux y por medio de los cuales se quiere hacer màs sencilla la interacciòn con la màquina. Los comandos que se nombraron fueron:
@@ -35,6 +35,9 @@ Este comando se usa de la misma manera que el comando mv, la diferencia entre es
 
 **man**
 Este comando muestra el manual de uso del comando espicificado   Ej: man mv                                                                                                                                                                                                       
+***
+b)Conexiòn de ROS con Matlab.
+
 
 
 ```

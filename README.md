@@ -31,10 +31,10 @@ Con este comando se logra borrar el directorio con el nombre especificado dentro
 Este comando se usa para cambiar la ubicaciòn de un archivo o directorio que se especifique, tambièn se suele usar este comando para renombrar un archivo o directorio al mismo tiempo que se cambia de ubicaciòn. En el siguiente ejemplo se movera el archivo "user" a un subdirectorio "equipo" que se encuentra en el directorio actual, y ademàs se cambiarà el nombre de user por un nuevo nombre "home". Ej: mv user equipo/home
 
 **cp**
-
+Este comando se usa de la misma manera que el comando mv, la diferencia entre estos dos comandos radica que con este el archivo original permanecerà en la misma direcciòn, mientras que con la funciòn mv, el archivo original ya no estarà en la posiciòn inicial.
 
 **man**
-
+Este comando muestra el manual de uso del comando espicificado   Ej: man mv                                                                                                                                                                                                       
 
 
 ```

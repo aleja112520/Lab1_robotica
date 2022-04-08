@@ -65,7 +65,7 @@ Tip:El topicopose únicamente sirve para suscribirse, consultar los servicios de
 c) Utilizando Python:
   - En el paquete *hello_turtle* de ROS, en la carpeta de scripts, crear un *script* de Python, de nombre *myTeleopKey.py*
   En esta parte se puede recurrir la opción de abrir carpetas y archivos que dispone VSCode en la parte superior izquierda de su interfaz de usuario.
-  !(https://i.postimg.cc/4xfknmYw/Screenshot-from-2022-04-07-20-35-40.png)
+  ![This is an image](https://i.postimg.cc/4xfknmYw/Screenshot-from-2022-04-07-20-35-40.png)
 
   
   - Escribir un código que permita operar una tortuga del paquete turtlesim con el teclado, que cumpla con las siguientes especificaciones:

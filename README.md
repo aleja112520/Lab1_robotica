@@ -4,7 +4,7 @@
 ***
 a.  Familiarizarse  con  los  comandos  de  mayor  uso  para  la  consola  de  Linux  (veáse http://www.informit.com/blogs/blog.aspx?uk=The-10-Most-Important-Linux-Commands)
 
-  En el sitio web al que se hace referencia, se nombran 10 comandos que pueden escribirse en el terminal de Linux y por medio de los cuales se quiere hacer màs sencilla la interacciòn con la màquina. Los comandos que se nombraron fueron:
+  En el sitio web al que se hace referencia, se nombran 10 comandos que pueden escribirse en el terminal de Linux y por medio de los cuales se quiere hacer más sencilla la interacciòn con la máquina. Los comandos que se nombraron fueron:
   
   - **pwd**:
   Este comando imprime la dirección del directior en el que estás. 
@@ -62,8 +62,19 @@ Tip:Usar la instrucción rossubscriber con los argumentos (’TOPICNAME’, ’M
 Tip:El topicopose únicamente sirve para suscribirse, consultar los servicios de turtlesim para modificar la pose de la tortuga.
 -Consultar de qué manera se finaliza el nodo maestro en Matlab
 
-c) Utilizando Python: Procedimiento:
+c) Utilizando Python:
   - En el paquete *hello_turtle* de ROS, en la carpeta de scripts, crear un *script* de Python, de nombre *myTeleopKey.py*
+  En esta parte se puede recurrir la opción de abrir carpetas y archivos que dispone VSCode en la parte superior izquierda de su interfaz de usuario.
+  !(https://postimg.cc/MvFrFZbj)
+
+  
   - Escribir un código que permita operar una tortuga del paquete turtlesim con el teclado, que cumpla con las siguientes especificaciones:
     - Se debe mover hacia adelante y hacia atr ́as con las teclas W y S.
-    - 
+    - Debe girar en sentido horario y antihorario con las teclas D y A.
+    - Debe retornar a su posici ́on y orientaci ́on centrales con la tecla R.
+    - Debe dar un giro de 180° con la tecla ESPACIO.
+  - Incluir el script que se acaba de crear en el apartado de *catkin_install_python* del archivo *CMakeLists.txt*, siguiendo la misma estructura de los otros scripts ya incluidos.
+  - Lanzar una terminal, dirigirse al directorio del workspace de *catkin* y escribir el comando *catkin make* para hacer build en el paquete modificado.
+  - Con Linux operando lanzar 3 terminales. En la primera terminal escribir el comando *roscore* para iniciar el nodo maestro.
+  - En la segunda terminal escribir *rosrun turtlesim turtlesim node*. 
+  - En la tercera terminal dirigirse al directorio que contiene el workspace de catkin y escribir source *devel/setup.bash*. Acto seguido escribir rosrun *hello_turtle myTeleopKey.py*. En este punto, la terminal ya deber ́ıa estar esperando el ingreso de teclas.

@@ -44,7 +44,9 @@ b)Conexiòn de ROS con Matlab.
 <img src="https://i.postimg.cc/x1F27MRh/Captura-de-pantalla-de-2022-04-07-16-30-22.png" alt="drawing" width="600"/>
 - Lanzar una instancia de Matlab para Linux 
 <img src="https://i.postimg.cc/CLcTBkW5/Captura-de-pantalla-de-2022-04-07-17-21-20.png" alt="drawing" width="600"/>
+
 - Crear un script con el siguiente código:
+
 
 ```
 %%
@@ -59,6 +61,7 @@ pause(1)
 ```
 
 <img src="https://i.postimg.cc/Twx55v9T/Captura-de-pantalla-de-2022-04-07-17-23-38.png" alt="drawing" width="600"/>
+
 
 - Ejecutar las tres secciones del script y observar los resultados con la pose de la tortuga.
 

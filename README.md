@@ -60,13 +60,13 @@ pause(1)
 
 <img src="https://i.postimg.cc/Twx55v9T/Captura-de-pantalla-de-2022-04-07-17-23-38.png" alt="drawing" width="600"/>
 
--Ejecutar las tres secciones del script y observar los resultados con la pose de la tortuga.
+- Ejecutar las tres secciones del script y observar los resultados con la pose de la tortuga.
 
 En el código anterior podemos ver como se inicializa un nodo maestro, luego se crea un publicador llamado velpub, cuyo nombre de topico es "/turtle1/cmd_vel" y el tipo de mensaje que transmitirá será "geometry_msgs/Twist". Posteriormente, se crea un mensaje al cual se le asigna el publicador creado anteriormente, luego al objeto velMsg se le apunta a sus paramétros Linear.X y se le asigna un valor de 1. Finalmente, se envia dicho mensaje con el publicador.
 
 Lo que se puede observar con la tortuga es que avanzó horizontalmente a la derecha, una pequeña distancia sin variar su ángulo.
 
--Crear un script en Matlab que permita suscribirse al tópico de pose de la simulación de turtle1.  
+- Crear un script en Matlab que permita suscribirse al tópico de pose de la simulación de turtle1.  
 
 Tip:Usar la instrucción rossubscriber con los argumentos (’TOPICNAME’, ’MESSAGETY-PE’), luego utilizar la opción lattest messagepara captura el último mensaje obtenido.
 
@@ -74,14 +74,14 @@ Tip:Usar la instrucción rossubscriber con los argumentos (’TOPICNAME’, ’M
 
 Se crea un suscriptor llamado suscrip, al cual se le da un nombre de topico "turtle1/Pose" y un tipo de mensaje "turtlesim/Pose". Posteriormente, al mediante el objeto suscrip se llama la función LatestMessage, en la consola aparecen los paramétros del último mensaje con el que se haya lanzado turtlesim, en este caso aparecen los parámetros por default.
 
--Crear un script en Matlab que permita enviar todos los valores asociados a la pose de turtle1.
+- Crear un script en Matlab que permita enviar todos los valores asociados a la pose de turtle1.
 
 Tip:El topicopose únicamente sirve para suscribirse, consultar los servicios de turtlesim para modificar la pose de la tortuga.
 <img src="https://i.postimg.cc/50Ln5JLy/Captura-lab1-robot.png" alt="drawing" width="600"/>
 
 Primero se crea un objeto tipo cliente con nombre "/turtle1/teleport_absolute", luego se crea un mensaje cuyo dato de entrada es el objeto creado anteriormente. En las líneas posteriores se modifican los parámetros X=3 Y=5 y Theta=1.5 del mensaje, finalmente se envía el mensaje con la función call y se le pone de entrada el mensaje y objeto tipo cliente creado. 
 
--Consultar de qué manera se finaliza el nodo maestro en Matlab
+- Consultar de qué manera se finaliza el nodo maestro en Matlab
 <img src="https://i.postimg.cc/YSGTGJSD/Captura-de-pantalla-de-2022-04-07-17-27-09.png" alt="drawing" width="600"/>
 
 La función que nos permite finalizar un nodo maestro es rosshutdown, en la imagen se ve como en la consola aparece un mensaje notificando dicha acción.
